@@ -1,11 +1,9 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[237]:
-
-
+#%%libraries
 import numpy as np
+from sklearn.datasets import make_blobs
+import pandas as pd
 
+#%%Coding the algorithm
 class KNN:
     def __init__(self, k, max_iterations = 100):
         self.og_data = data
@@ -33,15 +31,7 @@ class KNN:
                 else:
                     self.centroids[i] = np.nanmean(data[cluster_label == i],axis=0)
         
-        
-
-
-# In[238]:
-
-
-from sklearn.datasets import make_blobs
-import pandas as pd
-
+#%%Testing with fake data
 data, _ = make_blobs(n_samples=300, centers=3, random_state=41)
 
 knn = KNN(3)
