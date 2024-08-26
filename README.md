@@ -1,2 +1,2 @@
-# ML-from-scratch
-This is a growing repo where ML algorithms are coded from scratch in python.
+# KNN-from-scratch
+Implementación desde cero del algoritmo de K-Means en Python.
